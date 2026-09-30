@@ -24,5 +24,4 @@ public class MenuManager : MonoBehaviour
         EditorApplication.isPlaying = false;
     }
 
-
 }

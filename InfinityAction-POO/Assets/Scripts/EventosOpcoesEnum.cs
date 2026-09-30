@@ -1,0 +1,8 @@
+
+public enum EventosOpcoesEnum
+{
+    ENCONTRAR_ANIMAL_FEROZ = 1,
+    ENCONTRAR_PEDRA_MISTERIOSA = 2,
+    ENCONTRAR_ABISMO = 3,
+    ENCONTRAR_NOVO_CAMINHO = 4
+}
