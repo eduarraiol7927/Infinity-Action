@@ -21,7 +21,15 @@ public class MenuManager : MonoBehaviour
 
     public void Sair()
     {
-        EditorApplication.isPlaying = false;
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
     }
 
+    public void Voltar()
+    {
+        SceneManager.LoadScene("iniciar jogo");
+    }
 }

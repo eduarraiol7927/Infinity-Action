@@ -116,8 +116,8 @@ public class GameManager : MonoBehaviour
                 break;
 
             case EventosOpcoesEnum.ENCONTRAR_NOVO_CAMINHO:
-                textoNarrativa.text = "Seguindo em frente com a coragem a mil.\n\n" +
-                                      "Esta parte da floresta ainda não tinha explorado...\n" +
+                textoNarrativa.text = "Seguindo em frente com a coragem a mil." +
+                                      "Esta parte da floresta ainda não tinha explorado..." +
                                       "O que será que vou encontrar seguindo em frente?";
                 contadorDeTurno++;
                 MostrarBotoes(("Continuar", MostrarCaminho));
@@ -129,9 +129,9 @@ public class GameManager : MonoBehaviour
     {
         int taxa = acao switch
         {
-            AbismoEventosEnum.DESCER => UnityEngine.Random.Range(0, 30), // sempre falha
+            AbismoEventosEnum.DESCER => UnityEngine.Random.Range(0, 30),
             AbismoEventosEnum.PULAR => UnityEngine.Random.Range(0, 40),
-            AbismoEventosEnum.VOLTAR => 100,                              // sempre seguro
+            AbismoEventosEnum.VOLTAR => 100,                              
             _ => 0
         };
 
